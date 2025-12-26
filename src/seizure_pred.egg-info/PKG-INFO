@@ -1,3 +1,29 @@
+Metadata-Version: 2.4
+Name: seizure-pred
+Version: 0.2.0
+Summary: Seizure prediction and detection library (CHB-MIT and related datasets)
+Author: OCTA
+License: MIT
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: torch
+Requires-Dist: tqdm
+Provides-Extra: train
+Requires-Dist: pytest; extra == "train"
+Requires-Dist: pyyaml; extra == "train"
+Requires-Dist: scikit-learn; extra == "train"
+Provides-Extra: viz
+Requires-Dist: matplotlib; extra == "viz"
+Provides-Extra: eeg
+Requires-Dist: mne; extra == "eeg"
+Requires-Dist: mne-connectivity; extra == "eeg"
+Provides-Extra: signal
+Requires-Dist: scipy; extra == "signal"
+Provides-Extra: gnn
+Requires-Dist: torch-geometric>=2.4; extra == "gnn"
+
 # seizure-pred
 
 A modular Python library for **seizure prediction** and **seizure detection** workflows on windowed EEG datasets (e.g., CHB-MIT processed to NPZ).
